@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Practice text box" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-06-19T17:02:57" hostname="LAPTOP-BNAK8A6Q" time="28.975">
+  <properties/>
+  <testcase name="Full text box" classname="Practice text box" time="28.975">
+    <failure message="org.junit.ComparisonFailure: expected:&lt;Permanane[t] Address :Apt. 940 2...&gt; but was:&lt;Permanane[] Address :Apt. 940 2...&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;Permanane[t] Address :Apt. 940 2...&gt; but was:&lt;Permanane[] Address :Apt. 940 2...&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.advantageshopping.automation.pageobjects.TextBoxPage.validations(TextBoxPage.java:47)
+	at com.advantageshopping.automation.steps.TextBoxPageSteps.validationsOfTextBoxPage(TextBoxPageSteps.java:39)
+	at com.advantageshopping.automation.steps.TextBoxPageSteps$$EnhancerByCGLIB$$26e67dd4.CGLIB$validationsOfTextBoxPage$1(&lt;generated&gt;)
+	at com.advantageshopping.automation.steps.TextBoxPageSteps$$EnhancerByCGLIB$$26e67dd4$$FastClassByCGLIB$$2b6126c8.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at com.advantageshopping.automation.steps.TextBoxPageSteps$$EnhancerByCGLIB$$26e67dd4.validationsOfTextBoxPage(&lt;generated&gt;)
+	at com.advantageshopping.automation.stepdefinitions.PracticeTextBoxStepDefinitions.heShouldSeeHimDataDown(PracticeTextBoxStepDefinitions.java:27)
+	at ✽.he should see him data down.(src/test/resources/features/practiceTextBox.feature:7)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[jun 19, 2021 12:02:59 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --disable-popup-blocking,--..., goog:chromeOptions: {args: [--disable-popup-blocking, --incognito, --disable-download-notifica..., --start-maximized, --test-type, --ignore-certificate-errors, --allow-running-insecure-co..., --disable-translate, --always-authorize-plugins, --disable-extensions, --disable-dev-shm-usage], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+Starting ChromeDriver 91.0.4472.19 (1bf021f248676a0b2ab3ee0561d83a59e424c23e-refs/branch-heads/4472@{#288}) on port 28601
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+jun 19, 2021 12:03:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED: Full text box
+--------------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Validations of text box page
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - expected:<Permanane[t] Address :Apt. 940 2...> but was:<Permanane[] Address :Apt. 940 2...>
+]]></system-err>
+</testsuite>

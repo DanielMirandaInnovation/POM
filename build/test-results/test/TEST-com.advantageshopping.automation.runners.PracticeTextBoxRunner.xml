@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.advantageshopping.automation.runners.PracticeTextBoxRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="LAPTOP-BNAK8A6Q" time="0.0">
+  <properties/>
+  <system-out><![CDATA[
+?[31mFailed scenarios:?[0m
+?[31msrc/test/resources/features/practiceTextBox.feature:4 ?[0m# Full text box
+
+1 Scenarios (?[31m1 failed?[0m)
+3 Steps (?[31m1 failed?[0m, ?[32m2 passed?[0m)
+0m29,452s
+
+org.junit.ComparisonFailure: expected:<Permanane[t] Address :Apt. 940 2...> but was:<Permanane[] Address :Apt. 940 2...>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.advantageshopping.automation.pageobjects.TextBoxPage.validations(TextBoxPage.java:47)
+	at com.advantageshopping.automation.steps.TextBoxPageSteps.validationsOfTextBoxPage(TextBoxPageSteps.java:39)
+	at com.advantageshopping.automation.steps.TextBoxPageSteps$$EnhancerByCGLIB$$26e67dd4.CGLIB$validationsOfTextBoxPage$1(<generated>)
+	at com.advantageshopping.automation.steps.TextBoxPageSteps$$EnhancerByCGLIB$$26e67dd4$$FastClassByCGLIB$$2b6126c8.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at com.advantageshopping.automation.steps.TextBoxPageSteps$$EnhancerByCGLIB$$26e67dd4.validationsOfTextBoxPage(<generated>)
+	at com.advantageshopping.automation.stepdefinitions.PracticeTextBoxStepDefinitions.heShouldSeeHimDataDown(PracticeTextBoxStepDefinitions.java:27)
+	at ?.he should see him data down.(src/test/resources/features/practiceTextBox.feature:7)
+
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Rocket Chat at https://serenity-bdd.rocket.chat      
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+ Learn Serenity BDD online at http://serenity-dojo.com                               
+-------------------------------------------------------------------------------------
+
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Practice text box
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Full text box
+-------------------------------------------------------------------(practice-text-box;full-text-box)
+]]></system-err>
+</testsuite>
