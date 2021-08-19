@@ -4,6 +4,9 @@ import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.DefaultUrl;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+
+import java.util.concurrent.TimeUnit;
+
 import static org.junit.Assert.*;
 
 @DefaultUrl("https://www.demoqa.com/text-box")
@@ -41,6 +44,7 @@ public class TextBoxPage extends PageObject {
     }
 
     public void validations(String expectedName, String expectedEmail, String expectedCurrentAddress, String expectedPermanentAddress){
+        getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         assertEquals(getDriver().findElement(nameValidation).getText(), expectedName);
         assertEquals(getDriver().findElement(emailValidation).getText(), expectedEmail);
         assertEquals(getDriver().findElement(currentAddressValidation).getText(), expectedCurrentAddress);

@@ -27,15 +27,15 @@ public class TextBoxPageSteps {
         textBoxPage.setEmailInput(dataInjection.getEmail());
         textBoxPage.setCurrentAddressInput(dataInjection.getCurrentAddress());
         textBoxPage.setPermanentAddressInput(dataInjection.getPermanentAddress());
-        Times.waitFor(1000);
+        Times.waitFor(2000);
         Javascript.clickJS(textBoxPage.getDriver(), textBoxPage.submitButton);
+        Javascript.scroll(textBoxPage.getDriver(),textBoxPage.submitButton);
 
     }
 
     @Step
     public void validationsOfTextBoxPage() throws InterruptedException {
-       // textBoxPage.getDriver().manage().timeouts().pageLoadTimeout(10,TimeUnit.SECONDS);
-        Times.waitFor(10000);
+
         textBoxPage.validations(dataInjection.getExtensionName()+dataInjection.getName() + " " + dataInjection.getLastName(),
                 dataInjection.getExtensionEmail()+dataInjection.getEmail(),
                 dataInjection.getExtensionCurrentAddress()+dataInjection.getCurrentAddress(),
